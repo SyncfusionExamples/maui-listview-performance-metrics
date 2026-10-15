@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:syncfusion="clr-namespace:Syncfusion.Maui.ListView;assembly=Syncfusion.Maui.ListView"
+             xmlns:data="clr-namespace:Syncfusion.Maui.DataSource;assembly=Syncfusion.Maui.DataSource" 
+             xmlns:local="clr-namespace:Sample"
+             xmlns:dx="http://schemas.devexpress.com/maui"
+             xmlns:telerik="clr-namespace:Telerik.Maui.Controls;assembly=Telerik.Maui.Controls"
+             x:Class="Sample.ListViewSorting">
+    <ContentPage.BindingContext>
+        <local:GroupingViewModel/>
+    </ContentPage.BindingContext>
+    <Grid RowDefinitions="50,*">
+        <Button Text="GetDetails" Clicked="OnCounterClicked" Grid.Row="0"/>
+        <local:List x:Name="listView" Grid.Row="1"
+                    ItemsSource="{Binding Products}">
+            <syncfusion:SfListView.DataSource>
+                <data:DataSource>
+                    <data:DataSource.SortDescriptors>
+                        <data:SortDescriptor PropertyName="Name" Direction="Ascending"/>
+                    </data:DataSource.SortDescriptors>
+                </data:DataSource>
+            </syncfusion:SfListView.DataSource>
+            <local:List.ItemTemplate>
+                <DataTemplate>
+                    <local:AGrid Padding="0,2.5,0,2.5">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="2"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="2"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="2"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="2"/>
+                        </Grid.ColumnDefinitions>
+                        <BoxView Grid.Row="0" Grid.ColumnSpan="3" Grid.Column="0" HeightRequest="2" BackgroundColor="Black"/>
+                        <BoxView Grid.Row="2" Grid.ColumnSpan="3" Grid.Column="0" HeightRequest="2" BackgroundColor="Black"/>
+                        <BoxView Grid.Row="1" Grid.Column="0" WidthRequest="2" BackgroundColor="Black"/>
+                        <BoxView Grid.Row="1" Grid.Column="2" WidthRequest="2" BackgroundColor="Black"/>
+                        <Label Grid.Row="1" Grid.Column="1" Text="{Binding Name}"/>
+                    </local:AGrid>
+                </DataTemplate>
+            </local:List.ItemTemplate>
+        </local:List>
+    </Grid>
+
+</ContentPage>
