@@ -6,9 +6,9 @@ using System.Diagnostics;
 
 namespace Sample;
 
-public partial class NewPage1 : ContentPage
+public partial class HomePage : ContentPage
 {
-    public NewPage1()
+    public HomePage()
     {
         InitializeComponent();
     }
@@ -24,7 +24,7 @@ public partial class NewPage1 : ContentPage
                     break;
               
                 case "DevExp":
-                    Navigation.PushAsync(new DevExo());
+                    Navigation.PushAsync(new DevExpressPage());
                     break;
                 case "ListViewFiltering":
                     Navigation.PushAsync(new ListViewFiltering());

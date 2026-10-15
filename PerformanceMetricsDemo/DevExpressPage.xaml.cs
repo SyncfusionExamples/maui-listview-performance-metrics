@@ -5,9 +5,9 @@ using System.Diagnostics;
 
 namespace Sample;
 
-public partial class DevExo : ContentPage
+public partial class DevExpressPage : ContentPage
 {
-    public DevExo()
+    public DevExpressPage()
     {
         StaticClass.SetMyInt(0);
         StaticClass.Stop();

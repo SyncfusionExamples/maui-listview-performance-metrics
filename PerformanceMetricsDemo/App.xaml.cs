@@ -11,7 +11,7 @@ namespace Sample
 
         protected override Window CreateWindow(IActivationState? activationState)
         {
-            return new Window(new NavigationPage(new NewPage1()));
+            return new Window(new NavigationPage(new HomePage()));
         }
     }
 }
