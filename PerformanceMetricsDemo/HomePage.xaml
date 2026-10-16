@@ -25,68 +25,27 @@
        Text="10L"
        VerticalOptions="Center" 
        HorizontalOptions="Center" Clicked="Button_Clicked1" />
-        
+
+       <Button 
+      Text="SfListView"
+      VerticalOptions="Center" 
+      HorizontalOptions="Center" Clicked="Button_Clicked" />
+
+       <Button 
+      Text="ListViewGrouping"
+      VerticalOptions="Center" 
+      HorizontalOptions="Center" Clicked="Button_Clicked" />
+
         <Button 
-            Text="SfListView"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" Clicked="Button_Clicked" />
-        
-        <!--<Button 
-    Text="RadCollection"
-    VerticalOptions="Center" 
-    HorizontalOptions="Center" Clicked="Button_Clicked" />-->
-        
-            <!--<Button 
-    Text="DevExp"
-    VerticalOptions="Center" 
-    HorizontalOptions="Center" Clicked="Button_Clicked" />-->
+       Text="ListViewFiltering"
+       VerticalOptions="Center" 
+       HorizontalOptions="Center" Clicked="Button_Clicked" />
 
-            <Button 
-Text="ListViewGrouping"
-VerticalOptions="Center" 
-HorizontalOptions="Center" Clicked="Button_Clicked" />
+       <Button 
+      Text="ListViewSorting"
+      VerticalOptions="Center" 
+      HorizontalOptions="Center" Clicked="Button_Clicked" />
 
-            <!--<Button 
-Text="TelerikGrouping"
-VerticalOptions="Center" 
-HorizontalOptions="Center" Clicked="Button_Clicked" />
-        
-            <Button 
-Text="DevGrouping"
-VerticalOptions="Center" 
-HorizontalOptions="Center" Clicked="Button_Clicked" />-->
-
-            <Button 
-Text="ListViewFiltering"
-VerticalOptions="Center" 
-HorizontalOptions="Center" Clicked="Button_Clicked" />
-            
-            <!--<Button 
-Text="TelerikFiltering"
-VerticalOptions="Center" 
-HorizontalOptions="Center" Clicked="Button_Clicked" />
-        
-            <Button 
-Text="DevFiltering"
-VerticalOptions="Center" 
-HorizontalOptions="Center" Clicked="Button_Clicked" />-->
-
-            <Button 
-Text="ListViewSorting"
-VerticalOptions="Center" 
-HorizontalOptions="Center" Clicked="Button_Clicked" />
-
-            <!--<Button 
-Text="TelerikSorting"
-VerticalOptions="Center" 
-HorizontalOptions="Center" Clicked="Button_Clicked" />
-
-            <Button 
-Text="DevSorting"
-VerticalOptions="Center" 
-HorizontalOptions="Center" Clicked="Button_Clicked" />-->
-
-            
         </VerticalStackLayout>
     </ScrollView>
 

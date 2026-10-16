@@ -4,7 +4,6 @@
              xmlns:syncfusion="clr-namespace:Syncfusion.Maui.ListView;assembly=Syncfusion.Maui.ListView"
              xmlns:local="clr-namespace:Sample"
              xmlns:dx="http://schemas.devexpress.com/maui"
-             xmlns:telerik="clr-namespace:Telerik.Maui.Controls;assembly=Telerik.Maui.Controls"
              x:Class="Sample.MainPage">
     <ContentPage.BindingContext>
         <local:GroupingViewModel/>

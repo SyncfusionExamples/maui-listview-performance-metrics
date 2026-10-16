@@ -1,13 +1,10 @@
-﻿using DevExpress.Maui.CollectionView;
-using Syncfusion.Maui.ListView;
+﻿using Syncfusion.Maui.ListView;
 using Syncfusion.Maui.ListView.Helpers;
 using Syncfusion.Maui.Toolkit.Popup;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Diagnostics;
 using System.Runtime.CompilerServices;
-//using Telerik.Maui.Controls;
-//using Telerik.Windows.Documents.Spreadsheet.Expressions.Functions;
 
 namespace Sample
 {

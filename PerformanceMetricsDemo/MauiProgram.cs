@@ -1,8 +1,5 @@
-﻿using DevExpress.Maui;
-using Microsoft.Extensions.Logging;
+﻿using Microsoft.Extensions.Logging;
 using Syncfusion.Maui.Core.Hosting;
-
-using DevExpress.Maui.CollectionView;
 using Syncfusion.Maui.Toolkit.Hosting;
 namespace Sample
 {
@@ -12,11 +9,8 @@ namespace Sample
         {
             var builder = MauiApp.CreateBuilder();
             builder
-                .UseMauiApp<App>()
-                .UseDevExpress()
-                .UseDevExpressCollectionView()
-           
-            .ConfigureSyncfusionCore().ConfigureSyncfusionToolkit()
+                .UseMauiApp<App>()           
+                .ConfigureSyncfusionCore().ConfigureSyncfusionToolkit()
                 .ConfigureFonts(fonts =>
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");

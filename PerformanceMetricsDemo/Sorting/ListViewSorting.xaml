@@ -5,7 +5,6 @@
              xmlns:data="clr-namespace:Syncfusion.Maui.DataSource;assembly=Syncfusion.Maui.DataSource" 
              xmlns:local="clr-namespace:Sample"
              xmlns:dx="http://schemas.devexpress.com/maui"
-             xmlns:telerik="clr-namespace:Telerik.Maui.Controls;assembly=Telerik.Maui.Controls"
              x:Class="Sample.ListViewSorting">
     <ContentPage.BindingContext>
         <local:GroupingViewModel/>

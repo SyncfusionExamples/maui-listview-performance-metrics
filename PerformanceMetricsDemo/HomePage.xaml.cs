@@ -1,4 +1,3 @@
-using DevExpress.Maui.CollectionView;
 using Syncfusion.Maui.ListView;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
@@ -22,10 +21,6 @@ public partial class HomePage : ContentPage
                 case "SfListView":
                     Navigation.PushAsync(new MainPage());
                     break;
-              
-                case "DevExp":
-                    Navigation.PushAsync(new DevExpressPage());
-                    break;
                 case "ListViewFiltering":
                     Navigation.PushAsync(new ListViewFiltering());
                     break;
@@ -34,17 +29,6 @@ public partial class HomePage : ContentPage
                     break;
                 case "ListViewGrouping":
                     Navigation.PushAsync(new ListViewGrouping());
-                    break;
-                case "DevFiltering":
-                    Navigation.PushAsync(new DevFiltering());
-                    break;
-                
-                case "DevGrouping":
-                    Navigation.PushAsync(new DevGrouping());
-                    break;
-                
-                case "DevSorting":
-                    Navigation.PushAsync(new DevSorting());
                     break;
                
 
@@ -103,15 +87,6 @@ public class List : SfListView
     }
 }
 
-
-public class List2 : DXCollectionView
-{
-    public List2()
-    {
-        StaticClass.Reset();
-        StaticClass.Start();
-    }
-}
 
 public class Product
 {
